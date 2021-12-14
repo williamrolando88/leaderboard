@@ -2,9 +2,9 @@
   "name": "leaderboard",
   "version": "1.0.0",
   "description": "This project helps keep tracking of the leader scores given the name and the corresponding score value",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "build": "export NODE_ENV=production && webpack",
+    "build": "set NODE_ENV=production && webpack",
     "watch": "webpack -w",
     "webhint": "npx hint .",
     "stylelint": "npx stylelint \"**/*.{css,scss}\" --fix",
