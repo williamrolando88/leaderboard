@@ -32,7 +32,7 @@ module.exports = {
     new MiniCssExtractPlugin(),
   ],
   optimization: {
-    minimizer: [`...`, new CssMinimizerPlugin()],
+    minimizer: ['...', new CssMinimizerPlugin()],
   },
   devtool: 'source-map',
 };

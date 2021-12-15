@@ -5,8 +5,8 @@ export default class Scores {
 
   add(name, score) {
     const element = {
-      name: name,
-      score: score,
+      name,
+      score,
     };
     this.array.push(element);
     this.set();

@@ -1,5 +1,5 @@
-import appendElements from './appendElements';
-import Scores from './Scores';
+import appendElements from './appendElements.js';
+import Scores from './Scores.js';
 
 const scoreTable = new Scores();
 
@@ -11,6 +11,5 @@ export default function addScores(e) {
   name.value = '';
   score.value = '';
   name.focus();
-  console.log(scoreTable);
   appendElements(scoreTable.array);
 }
