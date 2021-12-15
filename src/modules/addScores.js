@@ -10,5 +10,6 @@ export default function addScores(e) {
   scoreTable.add(name.value, score.value);
   name.value = '';
   score.value = '';
+  name.focus();
   appendElements(scoreTable.array);
 }
