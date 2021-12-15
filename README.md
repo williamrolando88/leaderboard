@@ -1,4 +1,4 @@
-# Project name
+# Leaderboard
 
 This web app will help you to save and keep track of scores given.
 
@@ -54,11 +54,12 @@ You can start working right ahead
 
 ## 💻📱 Live Preview
 
+<!--
 We will come with a live demo after this first release
 
-There is no Live Demo available at the moment
+There is no Live Demo available at the moment -->
 
-<!-- If you want to see a live demo of this project, [click here](https://williamrolando88.github.io/es-tournament/) -->
+If you want to see a live demo of this project, [click here](https://williamrolando88.github.io/leaderboard/)
 
 ## Authors
 
