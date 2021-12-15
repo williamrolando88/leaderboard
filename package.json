@@ -2,7 +2,7 @@
   "name": "leaderboard",
   "version": "1.0.0",
   "description": "This project helps keep tracking of the leader scores given the name and the corresponding score value",
-  "main": "./src/index.js",
+  "main": "/index.js",
   "scripts": {
     "build": "set NODE_ENV=production && webpack",
     "watch": "webpack -w",
