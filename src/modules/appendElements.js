@@ -9,7 +9,7 @@ const render = (element) => {
   return scoreEntry;
 };
 
-const appendElements = (array) => {
+export default function appendElements(array) {
   const tableContent = document.querySelector('#table-content');
   while (tableContent.firstChild) {
     tableContent.removeChild(tableContent.firstChild);
@@ -22,6 +22,4 @@ const appendElements = (array) => {
     tableContent.appendChild(scoreEntry);
   });
   return tableContent;
-};
-
-export default { appendElements };
+}

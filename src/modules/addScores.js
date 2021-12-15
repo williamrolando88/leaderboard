@@ -3,7 +3,7 @@ import Scores from './Scores.js';
 
 const scoreTable = new Scores();
 
-const addScores = (e) => {
+export default function addScores(e) {
   e.preventDefault();
   const name = document.querySelector('#name');
   const score = document.querySelector('#score');
@@ -12,6 +12,4 @@ const addScores = (e) => {
   score.value = '';
   name.focus();
   appendElements(scoreTable.array);
-};
-
-export default { addScores };
+}
