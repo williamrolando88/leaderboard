@@ -12,12 +12,14 @@ function render(element) {
 
 export default function appendElements(array) {
   const tableContent = document.querySelector('#table-content');
+  while (tableContent.firstChild) {
+    tableContent.removeChild(tableContent.firstChild);
+  }
   array.forEach((element, i) => {
     const scoreEntry = render(element);
     if (i % 2 !== 0) {
       scoreEntry.classList.add('bg-stone-200');
     }
-    console.log(scoreEntry);
     tableContent.appendChild(scoreEntry);
   });
   return tableContent;

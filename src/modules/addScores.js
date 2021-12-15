@@ -11,5 +11,6 @@ export default function addScores(e) {
   name.value = '';
   score.value = '';
   name.focus();
+  console.log(scoreTable);
   appendElements(scoreTable.array);
 }
