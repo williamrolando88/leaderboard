@@ -1,0 +1,2 @@
+(()=>{"use strict";new class{constructor(){this.array=[]}add(s,t){const e={name:s,score:t};this.array.push(e),this.set()}set(){localStorage.setItem("scoresTable",JSON.stringify(this.array))}},document.querySelector("form").addEventListener("submit")})();
+//# sourceMappingURL=main.js.map
