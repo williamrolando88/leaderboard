@@ -1,6 +1,6 @@
 import appendElements from './appendElements.js';
 
-export default async function refresh(e) {
+const refresh = async (e) => {
   e.preventDefault();
   const response = await fetch(
     'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/DOVVH12mgm37io5xT1rR/scores/',
@@ -11,4 +11,6 @@ export default async function refresh(e) {
   );
   const scores = await response.json();
   appendElements(scores.result);
-}
+};
+
+export default refresh;
