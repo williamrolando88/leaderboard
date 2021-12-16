@@ -6,10 +6,9 @@ export default class Scores {
   add(name, score) {
     const element = {
       user: name,
-      score: score,
+      score,
     };
     this.array.push(element);
-    console.log(this.array);
   }
 
   clear() {

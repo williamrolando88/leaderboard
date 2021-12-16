@@ -1,5 +1,5 @@
 export default async function postScores(user, score) {
-  const postData = { user: user, score: score };
+  const postData = { user, score };
   await fetch(
     'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/DOVVH12mgm37io5xT1rR/scores/',
     {

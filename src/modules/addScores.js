@@ -1,4 +1,3 @@
-import appendElements from './appendElements.js';
 import postScores from './postScores.js';
 import Scores from './Scores.js';
 
