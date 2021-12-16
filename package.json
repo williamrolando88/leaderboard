@@ -9,7 +9,7 @@
     "webhint": "npx hint .",
     "stylelint": "npx stylelint \"**/*.{css,scss}\" --fix",
     "eslint": "npx eslint . --fix",
-    "deploy": "gh-pages -d dist"
+    "publish": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
