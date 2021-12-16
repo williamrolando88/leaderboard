@@ -1,7 +1,7 @@
 const render = (element) => {
   const scoreEntry = document.createElement('tr');
   const nameTd = document.createElement('td');
-  nameTd.textContent = element.name;
+  nameTd.textContent = element.user;
   scoreEntry.appendChild(nameTd);
   const scoreTd = document.createElement('td');
   scoreTd.textContent = element.score;
@@ -9,7 +9,7 @@ const render = (element) => {
   return scoreEntry;
 };
 
-const appendElements = (array) => {
+export default function appendElements(array) {
   const tableContent = document.querySelector('#table-content');
   while (tableContent.firstChild) {
     tableContent.removeChild(tableContent.firstChild);
@@ -22,6 +22,4 @@ const appendElements = (array) => {
     tableContent.appendChild(scoreEntry);
   });
   return tableContent;
-};
-
-export default { appendElements };
+}

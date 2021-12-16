@@ -5,14 +5,14 @@ export default class Scores {
 
   add(name, score) {
     const element = {
-      name,
-      score,
+      user: name,
+      score: score,
     };
     this.array.push(element);
-    this.set();
+    console.log(this.array);
   }
 
-  set() {
-    localStorage.setItem('scoresTable', JSON.stringify(this.array));
+  clear() {
+    this.array.splice(0);
   }
 }
