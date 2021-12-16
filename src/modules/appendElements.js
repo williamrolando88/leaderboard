@@ -1,9 +1,11 @@
 const render = (element) => {
   const scoreEntry = document.createElement('tr');
   const nameTd = document.createElement('td');
+  nameTd.classList.add('px-2');
   nameTd.textContent = element.user;
   scoreEntry.appendChild(nameTd);
   const scoreTd = document.createElement('td');
+  scoreTd.classList.add('px-2');
   scoreTd.textContent = element.score;
   scoreEntry.appendChild(scoreTd);
   return scoreEntry;
