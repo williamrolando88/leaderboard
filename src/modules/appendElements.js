@@ -1,7 +1,7 @@
 const render = (element) => {
   const scoreEntry = document.createElement('tr');
   const nameTd = document.createElement('td');
-  nameTd.textContent = element.name;
+  nameTd.textContent = element.user;
   scoreEntry.appendChild(nameTd);
   const scoreTd = document.createElement('td');
   scoreTd.textContent = element.score;

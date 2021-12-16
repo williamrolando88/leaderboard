@@ -5,9 +5,14 @@ export default class Scores {
 
   add(name, score) {
     const element = {
-      name,
-      score,
+      user: name,
+      score: score,
     };
     this.array.push(element);
+    console.log(this.array);
+  }
+
+  clear() {
+    this.array.splice(0);
   }
 }
